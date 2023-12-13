@@ -19,6 +19,6 @@ e. How to run your project
 
   
 f. Overview of the code structure (what code does what)
-  Our top module combines the LFSM (Random Number Generator), ALU, FSM, and answer check modules. The random number generator creates the 2 random numbers for our equation. The ALU Generates the correct answer, and compares that with the keyboard entered answer from the keyboard module. This then flags the entered value as right or not right, lighting up an LED and adding a point if right ==1. We also have our 3 screens, in the code, the game over, multiple choice, and 2 digit screen. 
+  Our top module combines the LFSM (Random Number Generator), ALU, FSM, and answer check modules. The random number generator creates the 2 random numbers for our equation. The ALU Generates the correct answer, and compares that with the keyboard entered answer from the keyboard module. This then flags the entered value as right or not right, lighting up an LED and adding a point if right ==1. We also have our 3 screens, in the code, the game over, multiple choice, and 2 digit screen. Our FSM outputs everything to the 7 segment displays, calculating points, and displaying the stopwatch in the same module. 
 
 g. Anything else you feel is relevant.
