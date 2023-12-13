@@ -1,0 +1,27 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../final_project2.srcs/sources_1/new/FSM.v" \
+"../../../../final_project2.srcs/sources_1/new/LFSR.v" \
+"../../../../final_project2.srcs/sources_1/new/alu.v" \
+"../../../../final_project2.srcs/sources_1/new/answer_check.v" \
+"../../../../final_project2.srcs/sources_1/new/clock_divider.v" \
+"../../../../final_project2.srcs/sources_1/new/counter.v" \
+"../../../../final_project2.srcs/sources_1/new/double_digit_screen.v" \
+"../../../../final_project2.srcs/sources_1/new/faster_clock_divider.v" \
+"../../../../final_project2.srcs/sources_1/new/game_over_screen.v" \
+"../../../../final_project2.srcs/sources_1/new/get_kb_val.v" \
+"../../../../final_project2.srcs/sources_1/new/keyboard.v" \
+"../../../../final_project2.srcs/sources_1/new/mult_choice_screen.v" \
+"../../../../final_project2.srcs/sources_1/new/points_counter.v" \
+"../../../../final_project2.srcs/sources_1/new/top_module.v" \
+"../../../../final_project2.srcs/sources_1/new/vga640x480.v" \
+"../../../../final_project2.srcs/sources_1/new/top.v" \
+"../../../../final_project2.srcs/sim_1/new/alu_tb.v" \
+"../../../../final_project2.srcs/sim_1/new/top_tb.v" \
+"../../../../final_project2.srcs/sim_1/new/answer_check_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
