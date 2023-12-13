@@ -1,5 +1,6 @@
 a. Project Name
   Rocket Math
+
 b. Team Members
   Morgan Weaver 
   Ella Hedman 
@@ -14,6 +15,9 @@ d. Overview of the Project
   There are 2 modes, a multiple choice mode, and a mode where the user enters their answer on a keyboard. The user is also able to choose with switches if they want to work on 
   addition, subtraction, or multiplication. 
 e. How to run your project
-  This project runs from the top module, top.v and uses the VGA, and FPGA. 
+  This project runs from the top module, top.v and uses the VGA, and FPGA seven segment display, LED's, and buttons. 
+
+  
 f. Overview of the code structure (what code does what)
+
 g. Anything else you feel is relevant.
