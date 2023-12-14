@@ -40,15 +40,20 @@ module counter(
    assign num_hund = (counter / 100) % 10;
 
     always @(posedge seconds_clock) begin
-        if (reset | num_hund) begin
+        if (num_hund) begin
             counter <= 4'b0000;
             is_running <= 0;
         end
+        else if (reset) begin
+            counter <= 4'b0000;
+            is_running <= 0;
+        end
+        
         if (start_stop) begin
             is_running <= ~is_running;
         end
         if (is_running) begin
-            counter <= counter +1;
+            counter <= counter+1;
         end
 
     end

@@ -25,25 +25,26 @@ module answer_check(
     kb_result,
     new_ques,
     right,
-    current_lives,
-    life
+    wrong
     );
     // result is pulled from the ALU
     input [6:0] result;
     input [6:0] kb_result; //output byte from keyboard is 8 bits
     input new_ques; //is flagged when timer for round runs out and new question is generated
     output reg right; // point is a binary 1 or 0 for right or wrong
-    input [2:0] current_lives;
-    output reg [2:0] life;
+    output reg wrong; //so wrong is not flagged at initialization
     
     
-    always @(new_ques) begin //user has to press enter for their answer to be read
-       if(result == kb_result) begin
-            right <= 1; 
-       end        
-       else begin
-            right <= 0;
-            //life <= current_lives - 1;
+    always @(new_ques) begin //user has to press enter ("new_ques" flag) for their answer to be read
+        if (new_ques == 1) begin
+            if(result == kb_result) begin
+                right <= 1; 
+                wrong <= 0;
+            end        
+            else begin
+                right <= 0;
+                wrong <= 1;
+            end
         end
     end 
 endmodule

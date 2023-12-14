@@ -31,7 +31,7 @@ module game_over_screen(
 
     );
     
-    wire rst = ~RST_BTN;    // reset is active low on Arty & Nexys Video
+   wire rst = ~RST_BTN;    // reset is active low on Arty & Nexys Video //FOR VGA
    
     // generate a 25 MHz pixel strobe
     reg [15:0] cnt;

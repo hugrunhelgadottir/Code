@@ -17,7 +17,7 @@ module top_module(
     //output reg [2:0] rand_num2_out
     );
 
-    //wire rst = ~RST_BTN;    // reset is active low on Arty & Nexys Video
+   wire rst = ~RST_BTN;    // reset is active low on Arty & Nexys Video //FOR VGA
    
     // generate a 25 MHz pixel strobe
     reg [15:0] cnt;
@@ -32,7 +32,7 @@ module top_module(
     vga640x480 display (
         .i_clk(CLK),
         .i_pix_stb(pix_stb),
-        .i_rst(RST_BTN),
+        .i_rst(rst),
         .o_hs(VGA_HS_O),
         .o_vs(VGA_VS_O),
         .o_x(x),

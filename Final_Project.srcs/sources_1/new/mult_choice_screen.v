@@ -20,7 +20,9 @@ module mult_choice_screen(
     wire [3:0] option_4;
     reg [2:0] rand_num;
     reg [2:0] rand_num_2;
+    
    wire rst = ~RST_BTN;    // reset is active low on Arty & Nexys Video
+   
    multiple_options get_opt(.correct_answer(correct_answer), .option_1(option_1), .option_2(option_2), .option_3(option_3), .option_4(option_4));
   // rand_num_gen RNG (.clock(CLK), .reset(rst), .generate_input(generate_input), .random_num({rand_num, rand_num_2}));
     // generate a 25 MHz pixel strobe
