@@ -8,6 +8,7 @@ b. Team Members
   Hugrun Helgadottir
 
 c. Link to your Project Demo Video
+https://youtu.be/ElcR1AjFy-8
 
 d. Overview of the Project
   Our project is a fun math game targeted towards kids learning simple addition, subtraction, and multiplication. The user can type answers based on an equation that pops up 
